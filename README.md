@@ -1,10 +1,10 @@
 # Habit Tracker Backend
 
-RESTful API backend for the Habit Tracker Android application. Built with Flask and SQLite.
+RESTful API backend for the Habit Tracker Android application: https://github.com/A1-lex/habit-veritas. Built with Flask and SQLite.
 
 ## 🔗 Related Repository
 
-**Android App**: [habit-tracker-android](https://github.com/YOUR_USERNAME/YOUR_ANDROID_REPO) *(update this link)*
+**Android App**: https://github.com/A1-lex/habit-veritas
 
 ## 📋 Features
 
@@ -21,6 +21,8 @@ RESTful API backend for the Habit Tracker Android application. Built with Flask 
 - **Framework**: Flask 3.1.2
 - **Database**: SQLite3
 - **Language**: Python 3.12
+
+![Python](https://img.shields.io/badge/python-3.12-blue) ![Flask](https://img.shields.io/badge/flask-3.1.2-green)
 
 ## 📂 Project Structure
 
@@ -43,8 +45,8 @@ backend/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/habit-tracker-backend.git
-   cd habit-tracker-backend
+   git clone https://github.com/A1-lex/habit-veritas-android-backend
+   cd habit-veritas-android-backend
    ```
 
 2. **Create virtual environment**
@@ -141,9 +143,13 @@ UNIQUE(habit_id, day)
 
 Create a `.env` file:
 ```bash
-FLASK_ENV=development
-FLASK_DEBUG=1
+FLASK_DEBUG=1  # Enable debug mode
 DATABASE_PATH=habits.db
+```
+
+Or run with debug flag:
+```bash
+flask run --debug
 ```
 
 ### Database Initialization
